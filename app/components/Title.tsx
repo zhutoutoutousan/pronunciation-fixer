@@ -22,14 +22,23 @@ export function Title() {
           Hero
         </h1>
       </div>
-      <motion.p 
-        className="text-white text-xl mt-4 font-medium"
+      <motion.div 
+        className="mt-4 space-y-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
       >
-        Master your English pronunciation with AI-powered feedback
-      </motion.p>
+        <p className="text-white text-xl font-medium">
+          Master your English pronunciation with AI-powered feedback
+        </p>
+        <ul className="text-gray-300 space-y-1">
+          <li>✓ 100% Free to Use</li>
+          <li>✓ No Sign-up Required</li>
+          <li>✓ Instant AI Feedback</li>
+          <li>✓ IPA Transcription</li>
+          <li>✓ Improvement Tips</li>
+        </ul>
+      </motion.div>
     </motion.div>
   );
 } 
